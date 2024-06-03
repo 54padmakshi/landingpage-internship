@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useState} from "react";
+import "./App.css";
+import HeroSection from "./components/HeroSection";
+import FeaturesSection from "./components/FeaturesSection";
+import Dashboard from "./components/Dashboard";
+import TestimonialsSection from "./components/TestimonialsSection";
+import ScreenShotsSection from "./components/ScreenshotsSection";
+import ContactSection from "./components/ContactSection"; 
+import pic from './images//Property 1=Default (1).png';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark');
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+            <button className="togglebutton" onClick={toggleDarkMode}>Toggle Dark Mode</button>
+           <Dashboard/> 
+          
+                
+                 <HeroSection/>
+                 <FeaturesSection/>
+                 <TestimonialsSection />
+                 <ScreenShotsSection />
+                 <ContactSection/>
+           
+       </div>
+        <img src={pic} alt="page" />
     </div>
   );
 }
 
 export default App;
+
