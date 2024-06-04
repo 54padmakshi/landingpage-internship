@@ -13,7 +13,7 @@ import ph3 from '../images/iPhone-13-Pro-Front-3.png';
 
 function HeroSection() {
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className='leftimages'>
       <img src={star3} alt = 'star'/>   
         <p><img style={{marginLeft : '80px'}}  src= {make} alt='Make'/></p> 

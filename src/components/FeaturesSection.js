@@ -4,7 +4,7 @@ import group3 from '../images/Group 1000002336.png';
 
 function FeaturesSection() {
   return (
-    <div className='feature'>
+    <div className='feature'id="features">
        <img src={group3} alt='group'/> 
        
         </div>
