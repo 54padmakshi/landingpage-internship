@@ -16,19 +16,21 @@ function Dashboard() {
     }
   };
   return (
-    <div className={`dash p-4 flex items-center ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
-    <img src={logo} alt="Logo" className="mr-3" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <b className="mr-3 text-lg">uifry</b> &nbsp;
-     <img src={tm} alt='mark'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#home" className="mr-3 text-red-500 hover:text-red-700">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#testi" className="mr-3 hover:text-gray-700">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#pricing" className="mr-3 hover:text-gray-700">Pricing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#features" className="mr-3 hover:text-gray-700">Features</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div className={`dash p-4 flex items-center ${darkMode ? 'bg-gray-900' : 'bg-white'}`} >
+
+    <img src={logo} alt="Logo" className="mr-3" /> &nbsp;&nbsp;&nbsp;
+    <b className="mr-3 text-lg" >uifry</b> &nbsp;&nbsp;
+     <img src={tm} alt='mark' className="mr-3"/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <a href="#home" className="nav-item mr-3 text-red-500" style={{color:'red'}}>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#testi" className="nav-item mr-3">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#pricing" className="nav-item mr-3">Pricing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#features" className="nav-item mr-3">Features</a>&nbsp;&nbsp;&nbsp;&nbsp;
     <button 
       className="ml-16 px-4 py-2 bg-black text-white text-2xl transition-transform duration-300 hover:scale-110"
+      style={{marginLeft:'150px'}}
     >
       Download
-    </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </button> &nbsp;&nbsp;
     <button 
       onClick={toggleDarkMode}
       className="ml-4 px-4 py-2 bg-gray-800 text-white transition-transform duration-300 hover:scale-110"
